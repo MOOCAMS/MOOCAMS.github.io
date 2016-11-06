@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>MOOCAMS by MOOCAMS</title>
+    <title>MOOCAMS</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -20,17 +20,23 @@
         <p class="header">Another Metadata Schema For MOOCs</p>
 
 
-
+<!--
         <ul>
           <li><a class="buttons github" href="https://github.com/MOOCAMS">GitHub Profile</a></li>
         </ul>
-
+-->
       </header>
       <section>
         <h3>
 <a id="moocams" class="anchor" href="#moocams" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MOOCAMS.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<p>
+  <ul>
+    <li>Title: MOOCAMS</li>
+    <li>Identifier: https://moocams.github.io/</li>
+    <li>Description: A metadata schema for MOOCs</li>
+  </ul>
+</p>
 
 <h3>
 <a id="terms" class="anchor" href="#terms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Terms</h3>
@@ -38,7 +44,7 @@
 <table>
   <tr><th colspan='2' id="title">Term Name: title</th></tr>
   <tr>
-    <td>URI:</td><td><a href="#title">https://moocams.github.io#title</a></td>
+    <td>URI:</td><td><a href="#title">https://moocams.github.io/#title</a></td>
   </tr>
   <tr>
     <td>Label:</td><td>Course Title</td>
@@ -58,7 +64,7 @@
   <!-- Identifier -->
   <tr><th colspan='2' id="identifier">Term Name: identifier</th></tr>
   <tr>
-    <td>URI:</td><td><a href="#identifier">https://moocams.github.io#identifier</a></td>
+    <td>URI:</td><td><a href="#identifier">https://moocams.github.io/#identifier</a></td>
   </tr>
   <tr>
     <td>Label:</td><td>Course Identifier</td>
@@ -68,7 +74,7 @@
   </tr>
   <tr>
     <td>Rule:</td><td>Input the complete form of URI that link directly to the page of the course.
-      <br>scheme://[user:password@]host[:port]][/]path[?query][#fragment]
+      <br><code>scheme://[user:password@]host[:port]][/]path[?query][#fragment]</code>
     </td>
   </tr>
   <tr>
@@ -77,6 +83,370 @@
   <tr>
     <td>Example:</td><td>https://www.coursera.org/learn/python-databases, ...</td>
   </tr>
+
+  <!-- description -->
+  <tr><th colspan='2' id="description">Term Name: description</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#description">https://moocams.github.io/#description</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Description</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The description of the course. It usually includes what the course is about, the basic background information of the content, or a brief introduction to the course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Use ‘take what you see’ approach.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>If there is no description available, short description should be provided by the metadata creator.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>In this course you will learn how to program in R and how to use R for effective data analysis. You will learn how to install and configure software necessary [...]</td>
+  </tr>
+
+  <!-- subject -->
+  <tr><th colspan='2' id="subject">Term Name: subject</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#subject">https://moocams.github.io/#subject</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Subject</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The area of knowledge of the course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Subject is a controlled vocabulary term chosen from Library of Congress Subject Headings (LCSH).</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>If the wanted subject is not available in LCSH, you may consider use ‘tags’ element to transcribe the term.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Information science, Python (Computer program language)</td>
+  </tr>
+
+  <!-- language -->
+  <tr><th colspan='2' id="language">Term Name: language</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#language">https://moocams.github.io/#language</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Language</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The language in which the course is taught.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Language is a controlled vocabulary chosen from ISO 639-3 Code.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>The language should be the language which the instructor(s) use(s) to explain rather than the one in the background or on slides. For instance, even though slides are in English, if the instructor uses Chinese to explain, the language transcribed should be Chinese. If the instructor uses both languages, transcribe both.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>eng, cmn</td>
+  </tr>
+
+  <!-- subtitles -->
+  <tr><th colspan='2' id="subtitles">Term Name: subtitles</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#subtitles">https://moocams.github.io/#subtitles</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Subtitles</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The language of subtitles provided by this course, if any.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Language is a controlled vocabulary chosen from ISO 639-3 Code.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>eng, cmn</td>
+  </tr>
+
+  <!-- level -->
+  <tr><th colspan='2' id="level">Term Name: level</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#level">https://moocams.github.io/#level</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Level</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The degree of difficulty related to subject matters.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Choose from: [Beginner | Intermediate | Advanced | Appropriate for all].</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>If there is no explicit level information provided by the course designers, leave it blank instead of ‘Appropriate for all’.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Beginner, Intermediate, Advanced</td>
+  </tr>
+
+  <!-- prerequisites -->
+  <tr><th colspan='2' id="prerequisites">Term Name: prerequisites</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#prerequisites">https://moocams.github.io/#prerequisites</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Prerequisites</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The knowledge which users are expected to have before taking this course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Use the “take what you see” approach.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>The element is not repeatable. If there are more than one prerequisite, separate them using semicolons.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Basic Python programming skills; Calculus; … </td>
+  </tr>
+
+  <!-- courseLoad -->
+  <tr><th colspan='2' id="courseLoad">Term Name: courseLoad</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#courseLoad">https://moocams.github.io/#courseLoad</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Load</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The estimated workload to achieve the course measured in hour.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>It can be transcribed in two formats: (1) weekly workload: [number of hours] hour(s)/week, (2) the whole workload: [number of hours] hour(s).</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>If the course load is provided in another format, please try to convert it into either one of the formats mentioned in the rule. It can be transcribed in range.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>3-4 hours/week, 30 hours</td>
+  </tr>
+
+  <!-- syllabus -->
+  <tr><th colspan='2' id="syllabus">Term Name: syllabus</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#syllabus">https://moocams.github.io/#syllabus</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Syllabus</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The outline or summary of the subjects to be covered in the course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Use the “take what you see” approach for each topic and separate the topics by semicolons.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>Only put the topics or titles of each unit. Do not put detailed descriptions.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>1. Background, Getting Started, and Nuts & Bolts; 2. Programming with R; 3. Loop Functions and Debugging; 4. Simulation & Profiling; ...</td>
+  </tr>
+
+  <!-- institution -->
+  <tr><th colspan='2' id="institution">Term Name: institution</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#institution">https://moocams.github.io/#institution</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Institution</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The name(s) of the institution(s) from where the course comes.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Use Library of Congress Name Authority to describe its name if applicable. If the name is not available in it, use the most common form of the name.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>Input all organizations that take part in the producing of this course. It is usually university name.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Stanford University, National Taiwan University, Google (Firm)</td>
+  </tr>
+
+  <!-- instructor -->
+  <tr><th colspan='2' id="instructor">Term Name: instructor</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#instructor">https://moocams.github.io/#instructor</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Instructor</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>Name(s) of the person(s) who deliver(s) this course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Use Library of Congress Name Authority to describe its name if applicable. If the name is not available in it, use the name that appears on the course page.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Charles Severance</td>
+  </tr>
+
+  <!-- provider -->
+  <tr><th colspan='2' id="provider">Term Name: provider</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#provider">https://moocams.github.io/#provider</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Provider</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The name of the platform/website which provides this course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Input the full official version of its name.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>If the provider has more than one official name, input the name in the original language.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Coursera, edX, Udacity</td>
+  </tr>
+
+  <!-- certificate -->
+  <tr><th colspan='2' id="certificate">Term Name: certificate</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#certificate">https://moocams.github.io/#certificate</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Certificate</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The type(s) of certificate the course provides.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>The value must be chosen from: [ No Certificate | Statement of Accomplishment | Verified Certificate | Other ]. If the course provides different types of certificate based on the fee you are willing to pay, transcribe all of them separated by semicolons.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>No Certificate; Verified Certificate</td>
+  </tr>
+
+  <!-- fee -->
+  <tr><th colspan='2' id="fee">Term Name: fee</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#fee">https://moocams.github.io/#fee</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Fee</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The fee users have to pay to access the course or to get the certificate.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>The record should follow the format: [currency code] [amount] - [description]. Currency code must be chosen from ISO 4217 (http://www.iso.org/iso/home/standards/currency_codes.htm). Separate different types of fee by semicolons.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>Use the original currency code.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>USD 0 - Statement of Accomplishment; USD 79 - Verified Certificate</td>
+  </tr>
+
+  <!-- openPeriod -->
+  <tr><th colspan='2' id="openPeriod">Term Name: openPeriod</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#openPeriod">https://moocams.github.io/#openPeriod</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Open Period</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The period during which the course is available or has to be completed.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Follow the format: YYYY/MM/DD - YYYY/MM/DD. Use ‘self-paced’ if the course has no end date.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>Regarding ‘self-paced’ course, the starting date is prefered if available.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>2016/01/01 - 2016/04/30, self-paced, 2016/01/01 - self-paced</td>
+  </tr>
+
+  <!-- rightsHolder -->
+  <tr><th colspan='2' id="rightsHolder">Term Name: rightsHolder</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#rightsHolder">https://moocams.github.io/#rightsHolder</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Rights Holder</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>A person or organization owning or managing rights over the resource.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Use Library of Congress Name Authority to describe its name if applicable. If the name is not available in it, use the most common form of the name.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Udacity Inc.</td>
+  </tr>
+
+  <!-- tags -->
+  <tr><th colspan='2' id="tags">Term Name: tags</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#tags">https://moocams.github.io/#tags</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Tags</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>Keywords, search terms, or terms related to the course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Separate tags using semicolons.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>Web design; HTML</td>
+  </tr>
+
+  <!-- rating -->
+  <tr><th colspan='2' id="rating">Term Name: rating</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#rating">https://moocams.github.io/#rating</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Course Rating</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The evaluation or assessment of the course on a particular scale by users.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Format: [average score] / [scale] (number of raters).</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>The value should be updated on a regular basis.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>4.5 / 5 (500)</td>
+  </tr>
+
+  <!-- relatedCourse -->
+  <tr><th colspan='2' id="relatedCourse">Term Name: relatedCourse</th></tr>
+  <tr>
+    <td>URI:</td><td><a href="#relatedCourse">https://moocams.github.io/#relatedCourse</a></td>
+  </tr>
+  <tr>
+    <td>Label:</td><td>Related Course</td>
+  </tr>
+  <tr>
+    <td>Description:</td><td>The URI to the course which is related the transcribed course.</td>
+  </tr>
+  <tr>
+    <td>Rule:</td><td>Input the URI from the identifier element of the related course.</td>
+  </tr>
+  <tr>
+    <td>Comment:</td><td>The related courses are usually the ones in the same program or specialization. The ones which are closely related should also be transcribed; i.e., Algorithm part-1 and Algorithm part-2.</td>
+  </tr>
+  <tr>
+    <td>Example:</td><td>https://www.coursera.org/learn/wharton-marketing</td>
+  </tr>
+
 </table>
 
 <h3>
@@ -85,7 +455,7 @@
 <p><a href="mailto:thelucif3r001@gmail.com">thelucif3r001@gmail.com</a></p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p><small>Designed for a group project of Information Organization in MSc. Information Studies programme.</small></p>
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
